@@ -1,0 +1,105 @@
+*,::before,::after{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 75%;
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: 0 auto;
+}
+
+/* header */
+.image{
+    background-image: url(./ressources/avocado.jpg);
+    height:400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size:2.5rem;
+    font-weight: 500;
+}
+h2{
+    font-size:2rem;
+}
+/* overview */
+.container_flex{
+    width:100%;
+    height:70px;
+}
+.liste_flex{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.liste_flex li{
+    list-style-type: none;
+    margin:20px 0;
+    text-align: center;
+    
+}
+/* pas de rond pour les étoiles */
+.noround{
+    height:  80px;
+    width:100px;
+    line-height: 80px;
+
+}
+.round{
+    border: 1px solid #ddd;
+    height:  80px;
+    width:80px;
+    border-radius: 50%;
+    /* centrer texte dans le rond */
+    line-height: 80px;
+}
+
+article{
+    margin-top: 50px;
+}
+/* stylisation balise hr */
+hr{
+    height: 1px;
+    background-color:#ddd;
+    border: none;
+}
+
+
+
+
+/* tableau ingredients */
+.liste_ingredients {
+    border-collapse: collapse;
+    width:100%;
+    height:200px;
+}
+tbody tr:nth-child(odd){
+    background: #f3f3f3;
+}
+tr{
+    border: 1px solid #ddd;
+}
+tbody, tr, td{
+    padding:15px;
+    /* enlever bordures right/left */
+    border-left:none;
+    border-right:none;
+}
+thead td{
+    font-weight: bold;
+    
+}
+caption{
+    margin-top: 10px;
+    caption-side: bottom;
+    text-align: left;
+    color:grey;
+}
+tbody tr:hover{
+    background: #f3f3f3;
+}
